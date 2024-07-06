@@ -1,0 +1,514 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  color: #fff;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.grid {
+  background-image: linear-gradient(to right, #ffffff 1px, transparent 1px),
+    linear-gradient(to bottom, #ffffff 1px, transparent 1px);
+  background-size: 6rem 4rem;
+}
+
+.container {
+  background-image: url("./assets/bg.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header {
+  margin-top: 55px;
+  border-radius: 10px;
+  padding: 12px 10px;
+  background: #282828;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.04);
+  width: 1200px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+header nav .left,
+header nav .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+header nav .left h3 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 145%;
+}
+
+header nav .right h3 {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 145%;
+}
+
+.promo {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  border-radius: 45px;
+
+  background: linear-gradient(270deg, #3951e5 3.88%, #e693a5 101.06%);
+  width: 500px;
+  height: 45px;
+  padding: 5px 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  margin-top: 35px;
+}
+
+.content h1 {
+  color: #000;
+  text-align: center;
+  font-family: "Dela Gothic One";
+  font-size: 68px;
+  font-weight: 400;
+  line-height: 110%;
+  margin-top: 35px;
+}
+
+.container .content p {
+  color: #626262;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 145%;
+  margin-top: 20px;
+}
+
+.cta input,
+.newsletter input {
+  padding: 15px 73px 15px 20px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 20px;
+}
+
+.cta button,
+.newsletter button {
+  width: 145px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  background: #314ee7;
+  border: none;
+  font-weight: 700;
+  line-height: 145%;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0.8;
+}
+
+.cta button:hover,
+.newsletter button:hover {
+  opacity: 1;
+}
+
+.testimonial {
+  margin-top: 35px;
+  display: flex;
+  gap: 50px;
+}
+
+.testimonial .profilepicture {
+  position: relative;
+}
+
+.testimonial .profilepicture #pp2 {
+  position: absolute;
+  left: 10px;
+}
+
+.testimonial .profilepicture #pp3 {
+  position: absolute;
+  left: 20px;
+}
+
+.testimonial .profilepicture #pp4 {
+  position: absolute;
+  left: 30px;
+}
+
+.testimonial .profilepicture #pp5 {
+  position: absolute;
+  left: 40px;
+}
+
+.testimonial .testimonialtext span {
+  color: #000;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.testimonial .testimonialtext p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imgfeatures {
+  position: relative;
+
+  margin-top: 35px;
+  border-radius: 25px;
+  background: linear-gradient(97deg, #314ee7 1.95%, #fe9c9c 101.8%);
+
+  width: 820px;
+  height: 275px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-180px * 6));
+  }
+}
+
+.imgcontainer {
+  display: flex;
+  gap: 30px;
+  /* overflow: hidden; */
+  padding: 30px 0px 30px 30px;
+
+  animation: scroll 10s linear infinite;
+}
+
+.imgcontainer img {
+  width: 300px;
+  height: 190px;
+  border-radius: 10px;
+}
+
+.gridfeatures {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.gridfeatures h2 {
+  position: absolute;
+  top: -100px;
+  left: 23%;
+
+  color: #000;
+  font-family: "Dela Gothic One";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 113%;
+}
+
+.gridcontainer {
+  position: relative;
+  margin-top: 10px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 55%;
+
+  overflow: hidden;
+}
+
+.griditem {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 30px;
+}
+
+.griditem h3 {
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 145%;
+}
+
+.griditem p {
+  color: #626262;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 145%;
+}
+
+.griditem .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 290px;
+  height: 100px;
+  padding: 13px 12px 13px 28px;
+  border-radius: 8px;
+  border: 0.8px solid rgba(0, 0, 0, 0.05);
+  background: #fdfdfd;
+  box-shadow: 0px 3.249px 6.497px 0px rgba(0, 0, 0, 0.07);
+}
+
+.griditem .button .content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#itembtn {
+  position: relative;
+  left: 8%;
+  top: 0;
+}
+
+.button h5 {
+  color: #314ee7;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.36px;
+}
+
+.button p {
+  color: #242424;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 165%;
+  opacity: 0.8;
+  text-align: start;
+}
+
+.button .icon {
+  display: flex;
+  width: 58px;
+  height: 58px;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 58px;
+  background: #314ee7;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.button .icon:hover {
+  opacity: 1;
+}
+
+.clc {
+  width: 340px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+#itemimg {
+  position: relative;
+  left: 30%;
+}
+
+.newsletter {
+  margin-top: 80px;
+  width: 900px;
+  padding: 50px 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  border-radius: 25px;
+  background: #fff;
+}
+
+.newsletter h2 {
+  color: rgba(10, 7, 27, 1);
+  text-align: center;
+  font-family: "Dela Gothic One";
+  font-size: 32px;
+  font-weight: 400;
+}
+
+footer {
+  margin-top: 55px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+footer .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+footer .left h3 {
+  color: #0a071b;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 145%;
+}
+
+footer .right ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+footer .right ul li {
+  color: #0a071b;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 145%;
+}
+
+@media (max-width: 1240px) {
+  header {
+    width: 800px;
+  }
+
+  .content h1 {
+    font-size: 48px;
+  }
+
+  .content p {
+    font-size: 18px;
+  }
+
+  .imgfeatures {
+    width: 620px;
+    height: 225px;
+  }
+
+  .imgcontainer {
+    gap: 20px;
+  }
+
+  .imgcontainer img {
+    width: 250px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .gridcontainer {
+    grid-template-columns: repeat(2, 1fr);
+    overflow: visible;
+  }
+
+  #itembtn {
+    left: -4%;
+    top: 30%;
+  }
+
+  #itemimg {
+    left: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    width: 650px;
+  }
+
+  .gridcontainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #itembtn {
+    display: none;
+  }
+
+  #itemimg {
+    display: none;
+  }
+
+  .newsletter {
+    width: 700px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    width: 350px;
+  }
+
+  .promo {
+    width: 300px;
+
+    font-size: 12px;
+  }
+
+  .content h1 {
+    font-size: 28px;
+  }
+
+  .container .content p {
+    font-size: 14px;
+  }
+
+  .newsletter {
+    width: 350px;
+  }
+
+  .newsletter h2 {
+    font-size: 20px;
+  }
+
+  .newsletter .joinwaitlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newsletter .joinwaitlist button {
+    width: 120px;
+  }
+}
